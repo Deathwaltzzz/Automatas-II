@@ -1,0 +1,15 @@
+program factorial?;
+var
+    int : n& ;
+    int : fact& ;
+begin
+    write ( "Ingrese un numero: " );
+    read ( n& ); // Se lee el numero n //
+    fact& := 1; // Se inicializa el factorial en 1 //
+    while ( n& > 0 ) do
+    begin
+        fact& := fact& * n&; // Se multiplica el factorial por n //
+        n& := n& - 1; // Se decrementa n //
+    end
+    write ( fact& ); // Se imprime el factorial //
+end
